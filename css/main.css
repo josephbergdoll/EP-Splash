@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles! 
+:focus {
+  outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: 'EP-Grotesk';
+  src: url("../f/ep-grot-book.eot");
+  src: local("☺"), url("../f/ep-grot-book.woff") format("woff"), url("../f/ep-grot-book.ttf") format("truetype"), url("../f/ep-grot-book.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'EP-Grotesk';
+  src: url("../f/ep-grot-extrabold.eot");
+  src: local("☺"), url("../f/ep-grot-extrabold.woff") format("woff"), url("../f/ep-grot-extrabold.ttf") format("truetype"), url("../f/ep-grot-extrabold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+body, html {
+  margin: 0;
+  padding: 0; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-family: "EP-Grotesk", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+.main-content, .sub-content {
+  padding: 1rem; }
+  @media screen and (min-width: 768px) {
+    .main-content, .sub-content {
+      padding: 3rem; } }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 700; }
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 2rem; } }
+
+h5 {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media screen and (min-width: 768px) {
+    h5 {
+      font-size: 0.75rem; } }
+
+.main-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff4e4e;
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    .main-content h2:first-of-type {
+      max-width: 50%; } }
+  .main-content h5 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700; }
+  .main-content a {
+    display: block;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    line-height: 1.2;
+    color: #000;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    transition: all 250ms ease-out; }
+    @media screen and (min-width: 768px) {
+      .main-content a {
+        padding-left: 3rem;
+        margin-left: -3rem;
+        margin-right: -3rem; } }
+    .main-content a:hover {
+      line-height: 2;
+      background: #fff;
+      color: #ff4e4e;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out; }
+
+.sub-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  z-index: 2; }
+  .sub-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.logo {
+  max-width: 15.5rem;
+  margin-bottom: 2rem;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden; }
+  .logo svg {
+    display: block;
+    max-width: 100%; }
+    .logo svg path {
+      fill: #ff4e4e; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      float: left;
+      margin-bototm: 0; } }
+
+.contact {
+  color: #000; }
+  .contact a {
+    color: #ff4e4e;
+    font-weight: 700;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    transition: all 250ms ease-out; }
+    .contact a:hover {
+      color: #000;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      transition: all 200ms ease-out; }
+  @media screen and (min-width: 768px) {
+    .contact {
+      position: absolute;
+      top: 50%;
+      right: 3rem;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); } }

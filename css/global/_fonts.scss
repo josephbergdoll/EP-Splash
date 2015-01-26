@@ -1,0 +1,16 @@
+// Fonts
+@font-face {
+  font-family: 'EP-Grotesk';
+  src: url('../f/ep-grot-book.eot');
+  src: local('☺'), url('../f/ep-grot-book.woff') format('woff'), url('../f/ep-grot-book.ttf') format('truetype'), url('../f/ep-grot-book.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EP-Grotesk';
+  src: url('../f/ep-grot-extrabold.eot');
+  src: local('☺'), url('../f/ep-grot-extrabold.woff') format('woff'), url('../f/ep-grot-extrabold.ttf') format('truetype'), url('../f/ep-grot-extrabold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
