@@ -44,8 +44,8 @@ h2 {
 }
 
 h5 {
-  font-size: 0.6875rem;
-  font-weight: $type-book;
+  font-size: 0.615rem;
+  font-weight: $type-bold;
   line-height: $line-med;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -74,6 +74,7 @@ h5 {
     margin-top: 4rem;
     margin-bottom: 1rem;
     font-weight: $type-bold;
+    color: $black;
   }
   a {
     display: block;
@@ -81,7 +82,8 @@ h5 {
     margin-right: -1rem;
     padding-left: 1rem;
     line-height: 1.2;
-    color: $black;
+    color: $white;
+    font-weight: $type-book;
     @include transition(all $hover-out ease-out);
     @include media($medium-up) {
       padding-left: 3rem;
@@ -91,7 +93,7 @@ h5 {
     &:hover {
       line-height: 2;
       background: $white;
-      color: $red;
+      color: $black;
       @include transition(all $hover-in ease-out);
     }
   }

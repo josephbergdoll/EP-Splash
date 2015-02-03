@@ -117,8 +117,8 @@ h2 {
       font-size: 2rem; } }
 
 h5 {
-  font-size: 0.6875rem;
-  font-weight: 400;
+  font-size: 0.615rem;
+  font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -142,14 +142,16 @@ h5 {
   .main-content h5 {
     margin-top: 4rem;
     margin-bottom: 1rem;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #000; }
   .main-content a {
     display: block;
     margin-left: -1rem;
     margin-right: -1rem;
     padding-left: 1rem;
     line-height: 1.2;
-    color: #000;
+    color: #fff;
+    font-weight: 400;
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     transition: all 250ms ease-out; }
@@ -161,7 +163,7 @@ h5 {
     .main-content a:hover {
       line-height: 2;
       background: #fff;
-      color: #ff4e4e;
+      color: #000;
       -webkit-transition: all 200ms ease-out;
       -moz-transition: all 200ms ease-out;
       transition: all 200ms ease-out; }
